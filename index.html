@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .bio-header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            transition: background 0.3s ease;
+        }
+        .bio-header:hover {
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+        }
+        .bio-section {
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .bio-section:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .bio-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            transition: transform 0.3s ease;
+        }
+        .bio-image:hover {
+            transform: scale(1.1);
+        }
+        .bio-footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(to right, #2575fc, #6a11cb);
+            color: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+        .bio-section h3 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;  
+        }
+        .contact-buttons a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none; 
+            transition: background 0.3s ease, transform 0.3s ease; 
+        }
+        .call-button { background-color: #28a745; }
+        .whatsapp-button { background-color: #25d366; }
+        .download-button { background-color: #007bff; margin-top: 20px; }
+
+        /* Hover effects */
+        .call-button:hover { background-color: #218838; transform: scale(1.1); }
+        .whatsapp-button:hover { background-color: #1ebe5b; transform: scale(1.1); }
+        .download-button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bio-header">
+            <h1>श्री गणेशाय नमः</h1>
+            <h2>Bio Data</h2>
+        </div>
+
+        <div id="bioData" class="bio-content">
+             <!-- Personal Information Section -->
+             <div class="row bio-section">
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="bio-image">
+                </div>
+                <div class="col-md-8">
+                    <h3>व्यक्तिगत माहिती</h3>
+                    <p><strong>नाव:</strong> राहूल गजानन इरकर</p>
+                    <p><strong>जन्म ठिकाण:</strong> किडेबिसरी</p>
+                    <p><strong>जन्म तारीख:</strong> १०/०८/१९९९ (04/12/1999)</p>
+                    <p><strong>जाती:</strong> हिंदू - धनगर</p>
+                    <p><strong>रक्त गट:</strong> O+</p>
+                    <p><strong>उंची:</strong> ५'७''</p>
+                </div>
+             </div>
+
+             <!-- Education Section -->
+             <div class="row bio-section">
+                <div class="col-md-12">
+                    <h3>शिक्षण</h3>
+                    <p><strong>शैक्षणिक पात्रता:</strong> BE (Internet of Things)<br>
+                    Persuing MBA in HR</p>
+                </div>
+             </div>
+
+             <!-- Professional Information Section -->
+             <div class="row bio-section">
+                <div class="col-md-12">
+                    <h3>व्यवसायिक माहिती</h3>
+                    <p><strong>नोकरी / व्यवसाय:</strong> Admin Officer</p>
+                    <p><strong>उत्पन्न:</strong> ₹३०,०००</p>
+                </div>
+             </div>
+
+             <!-- Native Village Section -->
+             <div class="row bio-section">
+                <div class="col-md-12">
+                    <h3>मूळ गाव</h3>
+                    <p><strong>गाव:</strong> करगणी (नागमणी), ता.:- आतपाडी, जि.:- सांगली</p>
+                </div>
+             </div>
+
+             <!-- Family Information Section -->
+             <div class="row bio-section">
+                <div class="col-md-12">
+                    <h3>कौटुंबिक माहिती</h3>
+                    <p><strong>वडिलांचे नाव:</strong> गजानन शंकर इरकर</p>
+                    <p><strong>वडिलांचा व्यवसाय:</strong> सरकारी नोकरी</p>
+                    <p><strong>आईचे नाव:</strong> कमल गजानन इरकर</p>
+                    <p><strong>बहिणीचे नाव:</strong> अंकिता गजानन इरकर</p>
+                    <p><strong>बहिणीचे शिक्षण:</strong> B.Tech in (Mech.)</p>
+                </div>
+             </div>
+
+             <!-- Relatives Contact Information Section -->
+             <div class="row bio-section">
+                <div class="col-md-12">
+                    <h3>मामांचे नाव / नंबर</h3>
+                    <p>1. अनिल दगडु कोळेकर (९८६०९७६९७४)</p>
+                    <p>2. प्रकाश दगडु कोळेकर (९८९९८८७९९९)</p>
+                </div>
+             </div>
+
+             <!-- Contact Information Section -->
+             <div class="row bio-section">
+                <div class="col-md-12">
+                    <h3>संपर्क माहिती</h3>
+                    <p><strong>संपर्क नंबर:</strong> (९९६००७७७७७), (९८९८९८७७७७)</p>
+                </div>
+             </div>
+
+             <!-- Photo Gallery Section -->
+             <div class="row bio-section">
+                <div class="col-md-12">
+                    <h3>फोटो गॅलरी</h3>
+                    <!-- Carousel for images -->
+                    <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/800x400" alt="Photo 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400" alt="Photo 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x400" alt="Photo 3" class="d-block w-100">
+                            </div>
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <!-- Next Control -->
+                        <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div><!-- End of Carousel -->
+                </div><!-- End of col-md-12 -->
+             </div><!-- End of Photo Gallery Section -->
+
+         </div><!-- End of bio-content -->
+
+         <!-- Contact Options Section -->
+         <div class="row bio-section contact-info"> 
+              <div class="col-md-12"> 
+                  <h3>संपर्क विकल्प</h3> 
+                  <div class="contact-buttons"> 
+                      <!-- Call and WhatsApp Buttons -->
+                      <a href="#" onclick='makeCall()' class='call-button'><i class='fas fa-phone-alt'></i> Call</a> 
+                      <a href="#" onclick='sendWhatsApp()' target="_blank" class='whatsapp-button'><i class='fab fa-whatsapp'></i> WhatsApp</a> 
+                  </div> 
+              </div> 
+         </div>
+
+         <!-- Download Button Section -->
+         <footer class='bio-footer'> 
+              &copy;2024 Bio Data
+              <!-- Download Button -->
+              &nbsp;<button id='downloadButton' onclick='downloadBioData()' class='btn download-button'><i class='fas fa-download'></i> Download as JPG</button></footer>
+
+    </div><!-- End of container -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js'></script>
+    <<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+
+    <!-- Include html2canvas for downloading as JPG -->
+    <<script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js'></script>
+
+    <!-- Custom JavaScript Functions -->
+    <<script type='text/javascript'>
+      function makeCall() {
+          window.location.href = "tel:+919960077777"; // Replace with actual number
+      }
+
+      function sendWhatsApp() {
+          const message = "Hello! I would like to connect.";
+          const phoneNumber = "919960077777"; // Replace with actual number
+          window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+      }
+
+      function downloadBioData() {
+          html2canvas(document.querySelector("#bioData")).then(canvas => {
+              const link = document.createElement('a');
+              link.download = 'biodata.jpg';
+              link.href = canvas.toDataURL("image/jpeg");
+              link.click();
+          });
+      }
+    </script>
+
+</body>
+</html>
+
